@@ -6,8 +6,22 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
 
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* Navbar Styling */
 .navbar {
+    z-index: 999;
     position: fixed;
     width: 100%;
     /* background: crimson; */
@@ -69,26 +83,57 @@
 .navbar.sticky .menu li a:hover{
     color: blue;
 }
-
+/* menu button styling */
 .menu-btn {
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
 }
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+/* Home Section Styling */
 .home {
     display: flex;
     background: url("img/cool-blue-5.jpg") no-repeat center;
     height: 100vh;
+    background-size: cover;
     color: #fff;
     min-height: 500px;
-    background-size: cover;
     background-attachment: fixed;
 }
 
 .home .home-content .text-2 {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 75px;
-    font-weight: 600;
+    font-weight: 700;
     margin: auto;
     
 }
@@ -101,27 +146,188 @@
     color: crimson;
     font-weight: 500;
 }
-
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1104px){
+    .about .about-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+}
 @media (max-width: 991px){
     .max-width {
         padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .max-width {
+        padding: 0 50px;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
     }
     .navbar .menu{
         position: fixed;
         height: 100vh;
         width: 100%;
-        left: 0;
+        left: -100%;
         top: 0;
-        background: #111;
+        background: skyblue;
         text-align: center;
         padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
     }
     .navbar .menu li{
         display: block;
     }
     .navbar .menu li a{
         display: inline-block;
-        margin: 20px;
+        margin: 20px 0;
         font-size: 25px;
     }
+    .home .home-content .text-2 {
+        font-size: 70px;
+        
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 35px; 
+    }
+    .about .about-content .column{
+        width: 50%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 690px){
+    .max-width {
+        padding: 0 23px;
+    }
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 32px;
+        
+    }
+}
+
+@media (max-width: 500px){
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+    .home .home-content .text-3 {
+        font-size: 27px;
+        
+    }
+}
+/* About Section Styling */
+
+section {
+    padding: 100px 0;
+} 
+.about {
+    font-family: 'Poppins', sans-serif;
+}
+.about .title {
+    position: relative;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.about .title::Before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 300px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Tournament Section Styling */
+
+.tournaments {
+    background-color: blue;
+}
+.tournaments .title {
+    position: relative;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.tournaments .title::Before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 450px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.tournaments-content{
+    align-items: center;
+}
+
+.calendar{
+    border: 0;
+    width: 800px;
+    height: 600px;
+    margin-left: auto;
 }
