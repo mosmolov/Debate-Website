@@ -128,6 +128,11 @@
     color: #fff;
     min-height: 500px;
     background-attachment: fixed;
+      /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home .home-content .text-2 {
@@ -364,3 +369,32 @@ section {
     background: #111;
     transform: translateX(-50%);
 }
+
+.judging .judging-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.judging .judging-content .left{
+    width: 45%;
+}
+
+.judging .judging-content .right{
+    width: 55%;
+}
+
+.judging .judging-content .left i{
+    font-size: 400px;
+}
+
+.judging .judging-content .right .text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+.judging-forms{
+    color: black;
+    text-decoration: underline;
+    line-height: 60px;
+}
+
