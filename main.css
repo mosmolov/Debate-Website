@@ -534,3 +534,14 @@ section {
     color: #fff;
     background: none;
 }
+
+/* footer styling */
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 23px;
+    text-align: center;
+    background: darkblue;
+    color: #fff;
+}
+
