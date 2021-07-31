@@ -114,24 +114,25 @@
                 </div>
                 <div class="column right">
                     <div class="text" style="color: #fff; text-decoration: underline;">Questions?</div>
-                    <form action="#">
+                    <form action="https://formspree.io/f/xayadkwp" method="POST" id="my-form">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" name="name" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" name="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Description" required></textarea>
+                            <textarea cols="30" rows="10" name="description" placeholder="Description" required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Send Message</button>
                         </div>
+                        <div id="status"></div>
                     </form>
                 </div>
             </div>
