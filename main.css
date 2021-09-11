@@ -186,11 +186,8 @@
         height: 350px;
         width: 350px;
     }
-    .judging .judging-content i{
-        color: white;
-    }
-    .judging .judging-content {
-        justify-content: center;
+    .judging .judging-content .left i{
+        display: none;
     }
 }
 @media (max-width: 991px){
@@ -247,19 +244,22 @@
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .judging .judging-content i{
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .judging .judging-content .column {
+        width: 50%;
+    }
+    .judging .judging-content .left{
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right{
+    .judging .judging-content .right{
         flex: 100%;
     }
     .max-width{
         max-width: 800px;
-    }
-    .judging .judging-content .column{
-        width: 50%;
     }
     .calendar{
         width: 500px;
@@ -413,12 +413,6 @@ section {
     width: 55%;
 }
 
-.judging .judging-content i{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
-}
 .judging .judging-content .left i{
     font-size: 400px;
 }
