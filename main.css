@@ -151,7 +151,11 @@
 }
 
 .home .home-content .text-3 {
-    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .home .home-content .text-3 span{
@@ -159,6 +163,11 @@
     font-weight: 500;
 }
 
+.home .home-content .text-3 a{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
 /* Media Queries */
 @media (max-width: 2800px){
     .calendar{

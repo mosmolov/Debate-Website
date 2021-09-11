@@ -6,9 +6,11 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+section {
+    padding: 100px 0;
+} 
 /* Navbar Styling */
 .navbar {
-    background-color: #5AB9EA;
     z-index: 999;
     position: fixed;
     width: 100%;
@@ -97,4 +99,61 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+}
+
+/* Home Section Styling */
+.home {
+    display: flex;
+    background: url("img/cool-blue-5.jpg") no-repeat center;
+    height: 50vh;
+    background-size: cover;
+    color: #fff;
+    min-height: 350px;
+    background-attachment: fixed;
+      /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .home-content .text-2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    margin: auto;
+    
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+}
+
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+
+/* Last Year Section Styling */
+.last-year {
+    font-family: 'Poppins', sans-serif;
+}
+.last-year .title {
+    position: relative;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.last-year .title::Before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 150px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
 }
