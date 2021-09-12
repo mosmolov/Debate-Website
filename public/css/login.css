@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+.context {
+  width: 100%;
+  position: absolute;
+  top: 50vh;
+}
+
+.context h1 {
+  border-radius: 15px;
+  border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml7,
+.ml8 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+
+.ml7 .text-wrapper,
+.ml8 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+  text-align: left;
+}
+
+.ml7 .letter,
+.ml8 .letter {
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.cssanimation,
+.cssanimation span {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.cssanimation span {
+  display: inline-block;
+}
+
+.leFlyInBottom span {
+  -webkit-animation-name: leFlyInBottom;
+          animation-name: leFlyInBottom;
+}
+
+@-webkit-keyframes leFlyInBottom {
+  0% {
+    -webkit-transform: translate(0px, 80px);
+            transform: translate(0px, 80px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translate(10px, -50px);
+            transform: translate(10px, -50px);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes leFlyInBottom {
+  0% {
+    -webkit-transform: translate(0px, 80px);
+            transform: translate(0px, 80px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translate(10px, -50px);
+            transform: translate(10px, -50px);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  background: #454eff;
+  background: -webkit-linear-gradient(to left, #4850e9, #242a9b);
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+.slide-top {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+          animation: slide-top 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+.slide-top-2 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+          animation: slide-top 1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+.navbar-inner {
+  background: transparent;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.fade-in-fwd {
+  -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.fade-in-fwd2 {
+  -webkit-animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.nav {
+  color: white;
+  font-size: 50px;
+}
+
+.login-box {
+  border-radius: 15px;
+  border-color: black;
+}
+
+.card {
+  background: transparent;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 15px;
+}
+
+.card-title {
+  font-size: 40px;
+}
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.login-input {
+  background: transparent;
+  border-color: black;
+  width: 50%;
+  margin-top: 2%;
+}
+/*# sourceMappingURL=login.css.map */
