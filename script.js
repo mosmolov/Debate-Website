@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    function popUp(){
+      document.getElementById('modal').style.display="block";
+    }
+  setTimeout(function(){
+      popUp();
+   },2000);
     $(window).scroll(function(){
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
