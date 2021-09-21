@@ -21,10 +21,6 @@ $(document).ready(function(){
       $('html').css("scrollBehavior", "smooth");
   });
   // toggle menu/navbar script
-  $('.menu-btn').click(function(){
-      $('.navbar .menu').toggleClass("active");
-      $('.menu-btn i').toggleClass("active");
-  });
 
   window.addEventListener("DOMContentLoaded", function () {
     // get the form elements defined in your form HTML above
