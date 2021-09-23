@@ -369,7 +369,6 @@ section {
     font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
     padding-bottom: 20px;
     color: #fff;
 }
@@ -395,7 +394,6 @@ section {
     font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
     padding-bottom: 20px;
     color: #111;
 }
@@ -648,3 +646,13 @@ footer {
     text-decoration: none;
     cursor: pointer;
   }
+
+  .tournaments .tournaments-content .text-3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    color: white;
+}
