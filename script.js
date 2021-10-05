@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    alert("Fill out this form with your parent's email!\nhttps://forms.gle/mRqFhd8nBM5Eu5iY9");
     function popUp(){
       document.getElementById('modal').style.display="block";
     }
