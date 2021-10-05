@@ -1,6 +1,4 @@
-$(document).ready(function(){
-    alert("Fill out this form with your parent's email: Press Ctrl + C to copy. Parent Email: https://forms.gle/mRqFhd8nBM5Eu5iY9 Personal Information: https://forms.gle/UHJws18yWRY1HYFi9");
-    
+$(document).ready(function(){    
     function popUp(){
       document.getElementById('modal').style.display="block";
     }
